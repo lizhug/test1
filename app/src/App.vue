@@ -155,7 +155,6 @@
           return
         }
 
-        //
         axios.post('http://www.test.com/submit_data', this.userData);
       }
     }
