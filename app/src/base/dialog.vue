@@ -10,9 +10,12 @@
       <main>
         <input
           type="tel"
+          max="10"
           placeholder="Add your phone number"
           class="user-info-input"
           v-model="phoneNumber"
+          @keyup.esc="close"
+          @keyup.enter="submitPhoneNumber"
           autofocus
         >
       </main>
